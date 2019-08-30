@@ -11,6 +11,6 @@ public class Rectangle {
 
     float area()
     {
-        return 0.0f;
+        return  length*breadth;
     }
 }
