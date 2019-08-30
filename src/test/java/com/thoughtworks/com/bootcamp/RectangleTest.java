@@ -29,4 +29,13 @@ public class RectangleTest {
         Rectangle rectangle2 = new Rectangle(length, breadth);
         Assertions.assertEquals(1.0f, rectangle2.area());
     }
+
+    @Test
+    void ToCalculatePerimeterOfRectangleAsBothLengthAndBreadthAsZero_WhenPerameterCalulated_ThenReturnZero()
+    {
+        float length = 0.0f;
+        float breadth = 0.0f;
+        Rectangle rectangle3 = new Rectangle(length, breadth);
+        Assertions.assertEquals(1.0f, rectangle3.perimeter());
+    }
 }
