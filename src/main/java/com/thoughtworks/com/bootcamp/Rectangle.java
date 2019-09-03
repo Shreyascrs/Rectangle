@@ -1,19 +1,26 @@
 package com.thoughtworks.com.bootcamp;
 
 public class Rectangle {
-    private final float length;
-    private final float breadth;
+    private double length;
+    private double breadth;
 
-    public Rectangle(float length, float breadth) {
+    Rectangle(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
 
-    float area() {
+    static Rectangle createSquare(double size) {
+        return new Rectangle(size, size);
+    }
+    static Rectangle createRectangle(double length,double breadth){
+        return  new Rectangle(length,breadth);
+    }
+
+    public double area() {
         return length * breadth;
     }
 
-    public float perimeter() {
+    public double perimeter() {
         return 2 * (length + breadth);
     }
 }
